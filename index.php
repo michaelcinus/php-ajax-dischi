@@ -1,6 +1,10 @@
 <?php
 
+header('Content-Type: application/json');
+
 include __DIR__ . '/partials/vars.php';
+
+echo json_encode($data);
 
 ?>
 
@@ -24,7 +28,7 @@ include __DIR__ . '/partials/vars.php';
                 color: white;'>
        <?php
 
-        echo  ' <img style="70%:auto;height:40%;margin-top:5%;" src="' . $album['poster'] . '" alt=""> ';   
+        echo  ' <img style="width:70%;height:auto;margin-top:5%;" src="' . $album['poster'] . '" alt=""> ';   
         echo '<h4>' . $album['title'] . '</h4>' . '<br>';
         echo $album['author'] . '<br>';
         echo $album['genre'] .'<br>';
