@@ -2,7 +2,7 @@ function importaCD() {
 
     $.ajax({
 
-        url: 'index.php',
+        url: 'json.php',
         method: 'GET' ,
         success: function( data, state){
 
